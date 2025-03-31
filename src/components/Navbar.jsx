@@ -13,7 +13,7 @@ const Navbar = () => {
     setOpen(true);
   };
 
-  const handleClose = (value) => {
+  const handleClose = () => {
     setOpen(false);
   };
 
@@ -35,7 +35,7 @@ const Navbar = () => {
       </Link>
       <SearchBar />
 
-      <button className="login-btn" onClick={handleClickOpen}>
+      <button className="login-btn navbar-login-btn" onClick={handleClickOpen}>
         Đăng nhập
       </button>
       <LoginDialog open={open} onClose={handleClose} />

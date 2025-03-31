@@ -19,6 +19,11 @@ a {
   font-family: "Dancing Script", cursive;
 }
 
+.account-input-box {
+  display: flex;
+  align-items: flex-end;
+  width: 250px;
+}
 
 ::-webkit-scrollbar {
   width: 0px;
@@ -88,12 +93,45 @@ a {
   color: #FFFFFF;
 
   padding: 10px 20px;
-  margin: 5px 20px 10px 5px;
   border-width: 2px;
   border-color: aliceblue;
-  border-radius: 20px;
   border-style: solid;
   transition: all 0.3s ease;
+}
+
+.navbar-login-btn {
+  margin: 5px 20px 10px 5px;
+  border-radius: 20px;
+}
+
+.dialog-login-btn {
+  margin-top: 10px;
+  margin-left: 5px;
+  width: 255px;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center !important;
+}
+
+.line-with-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.line-with-text::before,
+.line-with-text::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #000;  /* Create a line */
+  margin: 0 10px;  /* Space between the text and the line */
+}
+
+.line-with-text span {
+  padding: 0 10px;  /* Space between text and the lines */
+  font-size: 18px;
 }
 
 @media screen and (max-width: 900px) {
