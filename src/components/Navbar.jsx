@@ -4,19 +4,8 @@ import { Link } from "react-router-dom";
 import { logo } from "../utils/constants";
 import SearchBar from "./SearchBar";
 import { colors } from "../utils/constants";
-import LoginDialog from "./LoginDialog";
 
 const Navbar = () => {
-  const [open, setOpen] = React.useState(false);
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
-
   return (
     <Stack
       direction="row"
@@ -34,11 +23,6 @@ const Navbar = () => {
         <a className="title">GIA SƯ TÀI NĂNG</a>
       </Link>
       <SearchBar />
-
-      <button className="login-btn navbar-login-btn" onClick={handleClickOpen}>
-        Đăng nhập
-      </button>
-      <LoginDialog open={open} onClose={handleClose} />
     </Stack>
   );
 };

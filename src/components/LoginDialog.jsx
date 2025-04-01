@@ -19,6 +19,8 @@ import FormControl from "@mui/material/FormControl";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import { fetchLogin } from "../utils/fetchFromAPI";
+import Cookies from "js-cookie";
+import { useNavigate } from "react-router-dom";
 
 const LoginDialog = (props) => {
   const { onClose, open } = props;
@@ -28,6 +30,7 @@ const LoginDialog = (props) => {
   const [showPassword, setShowPassword] = React.useState(false);
   const [wrongAccount, setWrongAccount] = useState("");
   const [openDialog, setOpenDialog] = useState(false);
+  const navigate = useNavigate();
 
   const handleClose = () => {
     onClose();
@@ -56,6 +59,8 @@ const LoginDialog = (props) => {
           setOpenDialog(true);
         } else {
           setWrongAccount("");
+          Cookies.set("accessToken", response.value, { expires: 1 });
+          navigate(`/`);
           handleClose();
         }
       }
@@ -152,7 +157,7 @@ const LoginDialog = (props) => {
             />
           </FormControl>
         </Box>
-        <button className="login-btn dialog-login-btn" onClick={onhandleSubmit}>
+        <button className="dialog-login-btn" onClick={onhandleSubmit}>
           Đăng nhập
         </button>
         <div className="line-with-text">

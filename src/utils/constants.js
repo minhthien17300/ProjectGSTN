@@ -9,7 +9,6 @@ import DeviceThermostatIcon from '@mui/icons-material/DeviceThermostat';
 export const logo = "/logo.png";
 
 export const categories = [
-  { name: "New", icon: <HomeIcon /> },
   { name: "Toán", icon: <CalculateIcon /> },
   { name: "Ngữ Văn", icon: <AutoStoriesIcon /> },
   { name: "Tiếng Anh", icon: <AnnouncementIcon /> },

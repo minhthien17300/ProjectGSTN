@@ -9,7 +9,7 @@ import Videos from "./Videos";
 import { colors } from "../utils/constants";
 
 const Feed = () => {
-  const [selectedCategory, setSelectedCategory] = useState("New");
+  const [selectedCategory, setSelectedCategory] = useState("Toán");
   const [videos, setVideos] = useState([]);
   // console.log(selectedCategory);
   useEffect(() => {

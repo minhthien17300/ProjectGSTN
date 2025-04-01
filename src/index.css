@@ -77,26 +77,24 @@ a {
   transition: all 0.3s ease;
 }
 
-.login-btn {
-  font-weight: bold !important;
-  font-size: 15px;
-  text-transform: capitalize;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  cursor: pointer;
-  background: transparent;
-  outline: none;
-  border: none;
+.log-btn {
+  position: absolute;
+  bottom: 20px;
+  transform: translateX(-10%);
+}
 
-  background-color: #1E90FF;
-  color: #FFFFFF;
+.log-btn:hover span {
+  color: white !important;
+}
 
-  padding: 10px 20px;
-  border-width: 2px;
-  border-color: aliceblue;
-  border-style: solid;
-  transition: all 0.3s ease;
+.logout-btn:hover {
+  background-color: #FF0000 !important;
+  color: white !important;
+}
+
+.login-btn:hover {
+  background-color: #008000 !important;
+  color: white !important;
 }
 
 .navbar-login-btn {
@@ -105,12 +103,28 @@ a {
 }
 
 .dialog-login-btn {
+  font-weight: bold !important;
+  font-size: 15px;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
   margin-top: 10px;
   margin-left: 5px;
   width: 255px;
-  border-radius: 10px;
   text-align: center;
   justify-content: center !important;
+  background-color: #1E90FF;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border-width: 2px;
+  border-color: aliceblue;
+  border-style: solid;
+  transition: all 0.3s ease;
 }
 
 .line-with-text {
