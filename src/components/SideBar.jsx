@@ -2,6 +2,7 @@ import React from "react";
 import { Stack } from "@mui/material";
 import { categories, colors } from "../utils/constants";
 import LogoutIcon from "@mui/icons-material/Logout";
+import LoginIcon from "@mui/icons-material/Login";
 import Cookies from "js-cookie";
 import { useNavigate } from "react-router-dom";
 import LoginDialog from "./LoginDialog";
@@ -108,7 +109,7 @@ const SideBar = ({ selectedCategory, setSelectedCategory }) => {
               marginRight: "15px",
             }}
           >
-            <LogoutIcon />
+            <LoginIcon />
           </span>
           <span
             style={{

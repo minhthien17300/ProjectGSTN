@@ -127,6 +127,39 @@ a {
   transition: all 0.3s ease;
 }
 
+.navbar_category_btn {
+  font-weight: bold !important;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+  height: 67px !important;
+
+  margin-top: -20px;
+  margin-bottom: -20px;
+  transition: all 0.3s ease;
+}
+
+.navbar_category_btn:hover {
+  background-color: #0A75AD !important;
+  color: white !important;
+}
+
+.navbar_category_btn:hover span {
+  color: white !important;
+}
+
+.navbar_title {
+  color: white;
+  font-family: serif;
+  font-size: large;
+  margin: 0px 50px
+}
+
 .line-with-text {
   display: flex;
   align-items: center;

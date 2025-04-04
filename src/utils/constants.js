@@ -1,4 +1,3 @@
-import HomeIcon from "@mui/icons-material/Home";
 import CalculateIcon from '@mui/icons-material/Calculate';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import AnnouncementIcon from '@mui/icons-material/Announcement';
@@ -17,13 +16,21 @@ export const categories = [
   { name: "Sinh Học", icon: <ParkIcon /> },
 ];
 
+export const navbarCategories = [
+  {name: "Trang chủ"},
+  {name: "Khóa học"},
+  {name: "Sách"},
+  {name: "Video"},
+]
+
 export const colors = {
   skyBlue: "#00BFFF",
   darkerWhite: "#F5F5F5",
   lighterBlack: "#101010",
   white: "#FFFFFF",
   black: "#000000",
-  darkSilver: "#505050"
+  darkSilver: "#505050",
+  darkBlue: "#009FFF"
 }
 
 export const demoThumbnailUrl = "https://i.ibb.co/G2L2Gwp/API-Course.png";
