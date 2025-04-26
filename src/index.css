@@ -181,6 +181,47 @@ a {
   font-size: 18px;
 }
 
+.google-btn {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  background-color: white;
+  color: #555;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.google-btn:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.google-icon {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.signup-link {
+  font-size: 14px;
+  color: #333;
+  line-height: 0.1;
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.signup-link a:hover {
+  color: #0056b3;
+}
+
+
 @media screen and (max-width: 900px) {
   .category-btn {
     margin: 10px;

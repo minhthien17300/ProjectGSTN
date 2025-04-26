@@ -167,25 +167,8 @@ const LoginDialog = (props) => {
           </FormControl>
         </Box>
         <button className="dialog-login-btn" onClick={onhandleSubmit}>
-          Đăng nhập
+          Đăng ký
         </button>
-        <div className="line-with-text">
-          <h5>Hoặc đăng nhập bằng</h5>
-        </div>
-        <button className="google-btn" onClick={handleGoogleLogin}>
-          <img
-            src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
-            alt="Google Logo"
-            className="google-icon"
-          />
-          <span>Đăng nhập bằng tài khoản Google</span>
-        </button>
-        <p className="signup-link" style={{ marginTop: "20px" }}>
-          Chưa có tài khoản? <a href="/register">Hãy đăng ký</a>
-        </p>
-        <p className="signup-link">
-          Nếu bạn quên mật khẩu? <a href="/register">Lấy lại mật khẩu</a>
-        </p>
       </Stack>
       {/* Dialog Component */}
       <Dialog
